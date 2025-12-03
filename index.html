@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tina Zhang</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(180deg, #ffffff 0%, #ebfbff 100%);
+      min-height: 100vh;
+      padding: 60px 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .big-text {
+      font-size: clamp(2.5em, 5vw, 4em);
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .mini-text {
+      font-size: clamp(0.9em, 2vw, 1.1em);
+      color: #666;
+      margin-bottom: 40px;
+      font-weight: 300;
+    }
+
+    h2 {
+      font-size: clamp(1.5em, 3vw, 2em);
+      color: #2c3e50;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    .text {
+      font-size: clamp(0.95em, 1.5vw, 1.1em);
+      margin: 20px 0;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 30px;
+      margin-top: 25px;
+      background: linear-gradient(135deg, #ff9999 0%, #ff6b6b 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 1em;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+      background: linear-gradient(135deg, #ff7777 0%, #ff4444 100%);
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    strong {
+      color: #2c3e50;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section>
+      <p class="big-text">Hi there! I'm Tina</p>
+      <p class="mini-text">It's great to see you here :)</p>
+    </section>
+
+    <section>
+      <h2>About me</h2>
+      <p class="text">Electrical Engineering @ <img src="ubc logo.png" style="height: 25px; vertical-align: middle;"> UBC</p>
+      <p class="text">Interested in <strong>power electronics & AI</strong> and powering a safe, sustainable future</p>
+      <p class="text">1st year from Vancouver passionate about <strong>music, game development, and engineering design</strong></p>
+      <a href="about-me.html" class="button">More about me →</a>
+    </section>
+
+    <section>
+      <h2>Some things I've done</h2>
+      <p class="text"><strong>Electrical Actuation Lead</strong> @ <img src="okanagan_marine_robotics_logo.jpg" style="height: 25px; vertical-align: middle;"> Marine Robotics</p>
+      <p class="text">Developed a productivity app with <strong>GPT integration</strong> using <strong>Swift</strong></p>
+      <p class="text">Built a 🤖 <strong>remote control surveillance robot</strong> with the <strong>Raspberry Pi</strong></p>
+      <a href="projects.html" class="button">More projects →</a>
+    </section>
+  </div>
+</body>
+</html>

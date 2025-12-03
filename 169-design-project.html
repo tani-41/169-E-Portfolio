@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>169 Design Project - Tina Zhang</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #dde5f3 100%);
+      min-height: 100vh;
+      padding: 60px 20px;
+      text-align: center;
+      color: #333;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: clamp(2em, 4vw, 3em);
+      color: #2c3e50;
+      margin-bottom: 30px;
+      font-weight: 700;
+      border-top: 2px solid #2c3e50;
+      padding-top: 20px;
+      margin-top: 50px;
+    }
+
+    h2 {
+      font-size: clamp(1.3em, 3vw, 1.8em);
+      color: #2c3e50;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .text {
+      font-size: clamp(0.95em, 1.5vw, 1.1em);
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .back-link {
+      display: inline-block;
+      padding: 12px 30px;
+      background: linear-gradient(135deg, #ff9999 0%, #ff6b6b 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+      margin-top: 40px;
+    }
+
+    .back-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+      background: linear-gradient(135deg, #ff7777 0%, #ff4444 100%);
+    }
+
+    img {
+      max-width: 40%;
+      height: auto;
+      border-radius: 15px;
+      margin: 30px 0;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .img-caption {
+      font-size: clamp(0.85em, 1.2vw, 0.95em);
+      color: #888;
+      font-style: italic;
+      margin: -25px 0 30px 0;
+      line-height: 1.5;
+    }
+
+    .img-large {
+      max-width: 70% !important;
+    }
+
+    strong {
+      color: #2c3e50;
+      font-weight: 600;
+    }
+
+    table {
+      width: 70%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 20px;
+      text-align: left;
+      font-size: clamp(0.9em, 1.5vw, 1.05em);
+      line-height: 1.6;
+    }
+
+    th {
+      background: linear-gradient(135deg, #ff9999 0%, #ff6b6b 100%);
+      color: white;
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    tr:hover {
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+
+
+<body>
+    <h1>Project Entry: Tackling the Microplastic Crisis in the Great Lakes</h1>
+    <p class="text">Our team of five was tasked with addressing a significant modern problem with <strong>critical societal and ecological importance</strong> and designing a solution for its integration.</p>
+    <p class="text">We chose to focus on the pervasive issue of <strong>microplastic pollution in the Great Lakes</strong>, which poses severe threats to aquatic ecosystems and human health.</p>
+    <p class="text">This problem is defined by its sheer scale: Every year, 10–40 million metric tons of plastic enter the natural environment. These plastics eventually degrade into microplastics from sources like tires, cosmetics, and the breakdown of larger litter. Once created, these particles are permanently embedded in every facet of the ecosystem, from the air we breathe to the soil and water, including critical freshwater systems like the Great Lakes and St. Lawrence River.</p>
+
+    <h2>Our Objective: Designing a Source Solution</h2>
+    <p class="text">Our goal was to design a conceptual solution and a plan for integration to reduce microplastic pollution entering the Great Lakes.</p>
+
+    <p class="text">To maximize the chance of success, our team navigated a structured process that led us to the conceptual implementation of our solution.</p>
+    <img src="design-process.png" alt="Diagram of Microplastic Filtration System">
+    <p class="img-caption">Figure 1: Overview of the structured engineering design process used throughout the project</p>
+
+    <h1>Session 1: Team Building and Project Exploration</h1>
+    <p class="text">The complexity of the microplastics problem demanded a strong, coordinated team and a robust foundational understanding. Our first lab focused on establishing internal structure and deep-diving into the problem's mechanics.</p>
+    
+    <table>
+      <tr>
+        <th>What We Did</th>
+        <th>Why it’s Important</th>
+      </tr>
+      <tr>
+        <td>Established a team contract outlining roles (e.g. deliverable lead, meeting minutes taker...)</td>
+        <td>Immediately established individual ownership and a framework for efficient, distributed labor</td>
+      </tr>
+      <tr>
+        <td>Conducted in-depth research into origins and current mitigation techniques related to microplastic pollution in freshwater systems</td>
+        <td>Built a foundational understanding of the microplastic problem</td>
+      </tr>
+    </table>
+
+    <h1> Session 2: Project Requirements, Stakeholder Needs, Information Gathering and Solution Landscape</h1>
+    <p class="text">The second phase was critical for translating our broad objective into quantifiable engineering requirements and developing a robust project plan. This established the non-negotiable boundaries for our solution.</p>
+
+    <h2>Stakeholder Analysis & Project Requirements</h2>
+    <p class="text">We began by identifying key stakeholders and their needs to ensure our solution was ecologically and socially viable. This process used the Saliency Model (Power, Urgency, Legitimacy) to prioritize concerns.</p>
+    <img src="saliency-dimensions.jpg" alt="Stakeholder Saliency Dimensions">
+    <p class="img-caption">Figure 2: Stakeholder saliency model showing power, urgency, and legitimacy dimensions for key stakeholders</p>
+    <p class="text">The Saliency Model ensured that the final design addressed the most critical concerns from powerful, legitimate, and urgent stakeholder groups, such as lakeside homeowners and local government agencies.</p>
+    <p class="text">For instance, the University of British Columbia would have a saliency dimenion of 2, as they have power and legitimacy. We, as students, have a responsibility to maintain their global reputaiton while ensuring safety.</p>
+    <p class="text">A lakeside homeowner in the Great Lakes would have a saliency dimension of 3, with power, legitimacy, and urgency. We must ensure their current way of living remains undisrupted, as they hold a right to their land.</p>
+    <p class="text">We analyzed 10 different stakeholders, and this drove the core design requirements:</p>
+    
+    <div class="highlight-box">
+      <h2 style="text-align: center; margin-top: 0;">Design Requirements</h2>
+      <ul>
+        <li>On-lake battery re-charging hub</li>
+        <li>Minimal power usage for remote deployment</li>
+        <li>Large storage tanks for plastic waste to reduce back-and-forth redundancy</li>
+        <li>Quiet device when in use</li>
+        <li>No surface disruption through wake creation</li>
+        <li>Obstacle evasion detection (avoid humans, dead head trees, watercrafts)</li>
+        <li>Stays at least 40 ft away from shoreline and designated swimming zones</li>
+        <li>Lake zoning maps and public timing information to allow people to avoid the implemented cleaning system</li>
+        <li>Autonomous mobility to assist weather recall protocols</li>
+        <li>Maps and records locations of dense plastic buildup for data collection</li>
+      </ul>
+    </div>
+
+    <h2>Evaluation Criteria</h2>
+    <div class="highlight-box">
+      <ul>
+        <li><strong>Total weight of microplastics removed in one month (kg):</strong> Must be more than 833,333 kg [maximize]</li>
+        <li><strong>Cost of installation, repairs and maintenance per average lifespan:</strong> ($) [minimize]</li>
+        <li><strong>Individual unit price:</strong> ($) [minimize]</li>
+        <li><strong>Maintenance costs:</strong> ($) [minimize]</li>
+        <li><strong>System costs:</strong> ($) [minimize]</li>
+        <li><strong>Percentage of local residents bothered by product:</strong> (%) [minimize] <em>(AKA: percentage of user satisfaction with design)</em></li>
+        <li><strong>Environmental positives/quantifiable positive change:</strong> (%) [maximize]</li>
+      </ul>
+    </div>
+
+    <h2>Project Planning and Solution Landscape</h2>
+    <p class="text">To manage the project, we simultaneously created a <strong>project plan</strong> and analyzed existing solutions.</p>
+    <p class="text">We first created a <strong>Graphical Work Breakdown Structure (WBS)</strong> and <strong>Network Flow Diagrams</strong> to systematically map out project tasks for the future.</p>
+    <img src="WBS.png" alt="Work Breakdown Structure Diagram" class="img-large">
+    <p class="img-caption">Figure 3: Work Breakdown Structure (WBS) organizing project tasks hierarchically</p>
+    <img src="NFD.png" alt="Network Flow Diagram" class="img-large">
+    <p class="img-caption">Figure 4: Network Flow Diagram showing task dependencies and critical paths</p>
+
+
+    <h2>Ideal Solution Analysis</h2>
+    <p class="text">Additionally, we brainstormed existing microplastic removal methods (e.g. membrane filtration, magnetic separation) to inform our design. This analysis led us tot he concept of the <strong>Autonomous Fleet System.</strong></p>
+    <p class="text">This would include a fleet of autonomous robots operating offshore to collect/filter microplastics. They would use AI/data to predict and target areas of dense plastic buildup and periodically return to a solar-powered platform for plastic removal.</p>
+    <p class="text">We wanted to focus on deep-water extraction with minimal impact on wildlife, hence its slow movement and avoidance of sensitive zones.</p>
+
+    <h1>Session 3: Solution Generation and Selection</h1>
+    <p class="text">This session marked the transition from problem constraints to the <strong>conceptual design phase.</strong> We employed structured ideation techniques, followed by rigorous quantitiative analysis to narrow does a field of 20 potential solutions to the most viable design for prototyping.</p>
+    <h2>Ideation: Maximizing Creative Contributions</h2>
+    <p class="text">We used two core concept generation techniques to ensure every team member contributed equally and ideas were fully developed before selection.</p>
+    <p class="text">First, we used <strong>C-sketch,</strong> where team members simultaneously and iteratively sketched ideas, obligating a visual contributed from everyone. Then, we used the <strong>Gallery Method</strong>, where individuals generated ideas by themselves, followed by a group critique and refinement process.</p>
+    <img src="c-sketch.jpg" alt="C-Sketch Ideation Example">
+    <p class="img-caption">Figure 5: C-Sketch ideation process enabling collaborative concept generation</p>
+    <img src="gallery-method.jpg" alt="Gallery Method Ideation Example">
+    <p class="img-caption">Figure 6: Gallery Method for individual ideation followed by group critique and refinement</p>
+
+    <p class="text">As a result of this structured brainstorming, we generated 20 distinct potential solutions, ranging from filtration devices on ship hulls to the biological deployment of microplastic-consuming fungus species.</p>
+    <p class="text">These 20 ideas were distilled into <strong>six novel, high-potential solutions (A-F)</strong> including:</p>
+    <p class="text"><strong>A: </strong>Sea roombas-like autonomous surface vehicles with filtration</p>
+    <p class="text"><strong>D: </strong>Autonomous submersibles with vacuum systems</p>
+    <p class="text"><strong>F: </strong>Ship-mounted filtration systems for large-sclae, mobile pollution management</p>
+
+    <h2>Screening and Ranking</h2>
+    <p class="text">We first screened the six solutions, with reference to the design specifications. All six of them passed the screening test:</p>
+    <img src="screening-table.jpg" alt="Screening Table of Solutions">
+    <p class="img-caption">Figure 7: Initial screening table evaluating six potential solutions against design specifications</p>
+    <p class="text">Then, to objectively select the final solution, we employed a multi-stage ranking process that moved from subjective preference to quantitative evaluation.</p>
+    <p class="text">First, we used individual voting to gauge personal team biases and preferences. With this ranking method, concepts <strong>A, E, and F</strong> were favored.</p>
+    <p class="text">Next, we use pairwise comparison as a simple relative scoring system against criteria.</p>
+    <p class="text">Lastly, we conducted criterion-based ranking, where we compared each concept against the average performance for every specific evaluation criteria. <strong>Concepts A and F advanced.</strong></p>
+
+    <h2>Weighted Decision Matrix and Sensitivity Analysis</h2>
+    <p class="text">The final selection was determined by the <strong>Weighted Evaluation Matrix</strong>, where criteria (e.g., Microplastics Removed, Installation Cost) were weighted according to their importance derived from our Design Lab 2 stakeholder analysis. The Weighted Matrix, shown below, provided an objective basis for selection. </p>
+    <img src="wdm.jpg" alt="Weighted Decision Matrix" class="img-large">
+    <p class="img-caption">Figure 8: Weighted Decision Matrix providing objective quantitative comparison of final concepts</p>
+    <p class="text">Then we conduced <strong>Sensitivity Analyses</strong>, which reinforced the decision by showing that Concepts A, E, and F remained the strongest performers even when criteria weights were slightly adjusted, proving their overall robustness. </p>
+
+    <h2>Outcome: Final Concepts Selected</h2>
+    <p class="text">Based on the combined quantitative data from the matrices, Concepts <strong>A, E, and F </strong>produced the largest summative scores across both the original and revised weightings.</p>
+    <p class="text">Even though we had initially preferred an autonomous fleet of robots, concept <strong>F</strong> became the optimal solution for maximizing plastic removal, as it scored the highest total in the weighted decision matrix.</p>
+
+    <h1>Session 4: Selected Solutions Development and Analysis</h1>
+    <p class="text">This final lab stage involved deep-diving into the <strong>feasibility and risks</strong> of the top three concepts (A, E, F) and then rigorously testing the riskiest assumptions of the chosen solution.</p>
+
+    <h2>Concept Analysis and Final Selection</h2>
+    <p class="text">We analyzed the <strong>riskiest assumptions</strong> for each leading concept to justify the final selection:</p>
+
+    <table>
+      <tr>
+        <th>Concept</th>
+        <th>Description Summary</th>
+        <th>Riskiest Assumption</th>
+        <th>Final Rationale</th>
+      </tr>
+      <tr>
+        <td>A: Sea Roombas</td>
+        <td>Autonomous, car-sized, solar/electric hybrid robots using magnetic and mesh filtration.</td>
+        <td>Battery Management System Failure combined with volatile lake conditions leading to loss of the device and long-term unreliability.</td>
+        <td>Too hazardous and unreliable for long-term deployment; high maintenance/replacement costs.</td>
+      </tr>
+      <tr>
+        <td>E: Bioremediation</td>
+        <td>Cultivating algae/fungus beds to capture and digest microplastics in a controlled environment.</td>
+        <td>Unforeseen Biological Evolution/Invasiveness. Introducing a new species risks altering the natural ecosystem in unpredictable, potentially catastrophic ways.</td>
+        <td>Risk of ecological disaster is too great to ignore, despite low operating cost.</td>
+      </tr>
+      <tr>
+        <td>F: Ship-Attached Filtration</td>
+        <td>Large, modular filter system attached to the underside of commercial ships, utilizing magnetic and membrane filtration.</td>
+        <td>System Detachment/Membrane Failure and adverse impact on the ship's hydrodynamics (drag, fuel efficiency).</td>
+        <td>Selected Solution. The risks are Technical and Preventable, manageable through engineering and materials science, unlike the Strategic/External risks of A and E.</td>
+      </tr>
+    </table>
+
+    <p class="text">Based on the quantitative analysis and qualitative risk assessment, <strong>Concept F</strong> was selected as the most feasible and reliable long-term solution.</p>
+
+    <h2>Final Design Revision: Modular Ship Filter (Concept F)</h2>
+    <p class="text">The final design is a pair of modular filtration units easily attached to the hull of commercial ships, capitalizing on existing marine traffic for mass pollution removal.</p>
+    <p class="text">Key design features include a <strong>renewable algae filter</strong> to capture microplastics. In addition, <strong>internal iron oxide nanoparticles</strong> will be released, attaching themselves to trapped microplastics. An <strong>electromagnet</strong>, powered by a small internal battery and rail system, periodically passes behind the filter to collect the microplastic/iron oxide mass and transfers it to a <strong>500L holding tank</strong>. The device will be made out of <strong>high-quality, marine-grade 5083 aluminum</strong> for anti-corrosion, high strength, and light weight. Maintenance will be in 6-month cycles, and it is designed for easy removal and installation on land.</p>
+
+    <h2>Prototype Testing: Addressing Critical Risks</h2>
+    <p class="text">We focused prototyping on the two greatest technical risks identified in Concept F: hydrodynamic drag and membrane strength.</p>
+    <h2>i) Virtual Prototype: Minimizing Drag</h2>
+    <p class="text">To counter ship operator reluctance due to fuel efficiency concerns, we conducted a low-fidelity, iterative virtual prototype (on paper/CAD concept) focused on optimizing the filter's shape.</p>
+
+    <table>
+      <tr>
+        <th>Design Iteration</th>
+        <th>Inspiration / Change</th>
+        <th>Improvement (Takeaway)</th>
+      </tr>
+      <tr>
+        <td>Change 1</td>
+        <td>Inspired by Whale Sharks and Jet Engines. Tapered cylinder shape.</td>
+        <td>Allowed water to smoothly warp around the filter, minimizing large-scale turbulence.</td>
+      </tr>
+      <tr>
+        <td>Change 2</td>
+        <td>Addition of a sharp cone in front of the intake.</td>
+        <td>Reduced blockages (reducing maintenance) and improved aerodynamics by providing a smoother front surface.</td>
+      </tr>
+      <tr>
+        <td>Change 3</td>
+        <td>Application of Riblets (microscopic divots).</td>
+        <td>Achieved an estimated 11% reduction in drag by preventing the formation of strong, drag-inducing vortices (similar to dimples on a golf ball).</td>
+      </tr>
+      <tr>
+        <td>Change 4 (Final)</td>
+        <td>Redesigned intake (oval shape) inspired by the Manta Ray mouth. Aluminum shell.</td>
+        <td>Preserved hydrodynamics while maximizing intake area and using natural fluid mechanics to improve internal flow and collection efficiency.</td>
+      </tr>
+    </table>
+
+    <h2>ii) Physical Prototype: Membrane Strength</h2>
+    <p class="text"><strong>Force Calculation:</strong> Assuming a maximum ship speed of 40 kph, the actual forc eon a full-scale filter was calculated using the equation for force (F=pAv^2), resulting in a froce of 4.44e4 N.</p>
+    <p class="text"><strong>Scaled Testing:</strong> We calculated the necessary parameters to produce a scaled force of 4.4 N on a small test membrane (0.02 x 0.02 m) </p>
+    <p class="text"><strong>Results: </strong>The test proved that the algae membrane can indefinitely withstand the forces exerted by a ship moving under 40 kph, mitigating the risk of tearing.</p>
+
+    <h2>iii) Attachment System Prototype</h2>
+    <p class="text">We designed a modular Anchor System using four cables and winches bolted to the ship's deck. This system allows the filter body to slide onto the hull like a glove before being tensioned.</p>
+    <p class="text">Takeaway: This system makes the design interchangeable across different ship hulls (fiberglass, metal) and eliminates the need for expensive underwater divers or drydocking during installation and maintenance, directly addressing cost and complexity concerns.</p>
+
+    <h2>Formal Risk Assessment</h2>
+    <p class="text">Our final step was classifying the remaining risks of Concept F. The <strong>Risk Categorization Table</strong> and <strong>Risk Matrix</strong> showed that the most critical, high-likelihood/high-impact risks were generally Preventable or Technical in nature, reinforcing the decision to select Concept F.</p>
+    <img src="risk.jpg" alt="Risk Categorization Table and Risk Matrix" class="img-large">
+    <p class="img-caption">Figure 9: Risk matrix categorizing remaining risks by likelihood and impact severity</p>
+    <p class="text">The most concerning risks, as demonstrated by the risk matrix table, are the possibility that water intake sucks in aquatic life, operator misuse, and chemical reactions/material degradation. Thus, for these risks, risk management strategies were created:</p>
+
+    <table>
+      <tr>
+        <th>Critical Risk</th>
+        <th>Mitigation Strategy</th>
+      </tr>
+      <tr>
+        <td>Water intake ingesting aquatic life</td>
+        <td>Installation of small grates and reducing intake velocity to allow aquatic life to escape the current.</td>
+      </tr>
+      <tr>
+        <td>Operator misuse or improper maintenance</td>
+        <td>Implementing an in-depth formal training program and using senior employee supervision.</td>
+      </tr>
+      <tr>
+        <td>Material degradation/chemical reactions</td>
+        <td>Using anti-reactive materials (5083 Aluminum) and installing a monitoring/alarm system to alert workers to potential deterioration.</td>
+      </tr>
+    </table>
+
+    <p class="text">The entirety of the project, from the initial deep dive into microplastic pervasiveness to the final, quantitative risk assessment, culminated in the selection and robust refinement of Concept F. Our final design is a modular, maintainable, and low-drag ship-attached filtration system ready for regulatory compliance and industrial adoption, offering a feasible path to significantly reduce microplastic pollution in the Great Lakes.</p>
+
+    <h1>Session 5: Implementation Plan, System Analysis and Sustainability Assessment</h1>
+    <p class="text">Our comprehensive plan outlines the path from final design validation to the deployment of the first batch of 25 filtration systems on active vessels within two years (by May 2027).</p>
+
+    <h2>Project Timeline and Critical Path</h2>
+    <p class="text">The project is structured around key phases, with a minimum deployment time of 1 year and 7 months. The critical path length is 10 months. A <strong>Gantt chart</strong> was created to organize the timeline into a visual format:</p>
+    <img src="gantt.jpg" alt="Gantt Chart of Project Timeline" class="img-large">
+    <p class="img-caption">Figure 10: Gantt chart visualizing project phases and critical path over 19 months</p>
+
+    <h2>Team Structure and Personnel</h2>
+    <p class="text">Our operational plan uses a specialized team structure to maximize efficiency across <strong>technical, regulatory, and public</strong> fronts.</p>
+
+    <table>
+      <tr>
+        <th>Team</th>
+        <th>Specialists & Roles</th>
+        <th>Primary Deliverable</th>
+      </tr>
+      <tr>
+        <td>Research</td>
+        <td>Mechanical & Marine Engineers, Interns</td>
+        <td>Final CAD models, hydrodynamic simulations, and full-scale physical prototypes used in ship trials.</td>
+      </tr>
+      <tr>
+        <td>Assembly</td>
+        <td>Marine Technicians, Engineering Interns</td>
+        <td>Mass production of 25+ units, training of ship crews, and physical installation of the systems.</td>
+      </tr>
+      <tr>
+        <td>Marketing</td>
+        <td>Development Director, Public Affairs Expert</td>
+        <td>Secure investor funding, organize public showcases, and lobby government bodies for incentive programs.</td>
+      </tr>
+      <tr>
+        <td>Oversight</td>
+        <td>Project Manager, Environmental Compliance Specialist</td>
+        <td>Oversee timeline, manage deliverables, secure regulatory approvals, and ensure design compatibility.</td>
+      </tr>
+    </table>
+
+    <h2>System Analysis: Sustainability and Life-Cycle Thinking</h2>
+    <p class="text">A sustainability assessment was performed on the three major material components of the filtration system using a Life-Cycle Thinking approach to minimize both eco-costs and carbon footprint.</p>
+
+    <h2>Material Selection Rationale</h2>
+    <p class="text">We used the <strong>IDEMAT</strong> tool to compare materials under scenarios (e.g., Closed-Loop Recycling) relevant to their component life cycles.</p>
+
+    <table>
+      <tr>
+        <th>Component</th>
+        <th>Material Selected</th>
+        <th>Rationale</th>
+      </tr>
+      <tr>
+        <td>Filtration Casing</td>
+        <td>Marine-Grade 5083 Aluminium</td>
+        <td>Lowest eco-costs (€0.14) and significantly lowest carbon footprint (0.75 kg CO2) compared to titanium (17.56 kg CO2) and stainless steel.</td>
+      </tr>
+      <tr>
+        <td>Ship Attachment Points</td>
+        <td>Steel (Primary)</td>
+        <td>Lowest eco-costs (€0.13) and lowest carbon footprint (0.68 kg CO2)under the long-life "Closed Loop Recycling" scenario.</td>
+      </tr>
+      <tr>
+        <td>Supporting Netting</td>
+        <td>Polypropylene (PP)</td>
+        <td>Lowest carbon footprint (1.36 kg CO2). Chosen over Polyester (lower eco-cost) due to the substantial difference in environmental impact (approximately 2 kg CO2 less per kg).</td>
+      </tr>
+    </table>
+    <p class="text">The final design commits to the most sustainable material solution for each component, ensuring long-term environmental and economic viability.</p>
+
+    <h1>Project Conclusion</h1>
+    <p class="text">The journey of this design project began with confronting a massive, persistent environmental challenge: microplastic pollution pervading the Great Lakes ecosystem. Our team successfully navigated a rigorous, four-stage design process to transform this broad problem into a viable and implementable engineering solution.</p>
+    <p class="text">This design project successfully addressed the pervasive ecological threat of microplastic pollution in the Great Lakes by following a rigorous, data-driven engineering process. Our journey began with a deep system analysis, which justified the shift from generic ideation to the focused development of Concept F: a modular, low-drag filtration system attached to existing commercial ships. The project's most critical challenge, validating the design's feasibility, was met through iterative prototyping, where scaled physical testing confirmed the durability of the algae membrane against water pressure, and virtual prototyping drastically reduced drag through bio-inspired design (riblets and the Manta Ray intake). The final selection was reinforced by a Risk Assessment and Life-Cycle Analysis, which confirmed Concept F's superior technical reliability and sustainable material choices (Marine-Grade Aluminum, Polypropylene). Ultimately, this project demonstrates the integration of the engineering design process as well as the and socio-ecological responsibility to deliver a solution that is not only effective but also viable for real-world adoption.</p>
+
+    <h1>Reflection</h1>
+    <p class="text">Throughout this course, I gained a much deeper understanding of the Engineering Design Process. I believe that the purpose of this project was not to memorize the exact details of the design process — it is meant to build a foundation of <strong>“common sense”</strong> for how a complex project should come into fruition. The design process isn’t meant to be memorized. Instead, it exists to guide engineers toward <strong>clear, well-reasoned decisions while reducing risk</strong>. Each stage, from brainstorming to prototyping to evaluation, forced me to slow down, think critically, and justify why a solution made sense before moving forward.</p>
+    <p class="text">One of the most important realizations I had was that engineering is <strong>fundamentally collaborative.</strong> Early in the term, our team struggled because our individual strengths were dramatically different. Some members were strong at generating ideas but struggled with writing. Others, including myself, were better at organizing information and communicating clearly through written and verbal communication. Once we learned to match tasks to strengths, after Session 2, the quality of our work and our efficiency improved significantly. For instance, it would be more effective for the strongest visualizer to complete one portion that required diagramming (such as creating network flow diagrams) rather than assigning one network flow diagram to each member, while others may work on other sections they are more comfortable with. From this, I learned that <strong>adaptability and communication</strong> within a team are core attributes of an engineer. </p>
+    <p class="text">This project also shifted my understanding of what engineers owe to society. In Lab 4 especially, I realized how dangerous flawed assumptions or tunnel vision can be. I was initially fixated on an autonomous robot concept, but once I began prototyping, I saw its feasibility collapse under practical constraints and risks. That experience reminded me that engineers must be <strong>responsible, evidence-driven, and willing to abandon ideas</strong> when they pose risks or lack practicality.</p>
+    <p class="text">Through this course, I discovered that my strengths lie in <strong>conceptual thinking and adaptability</strong>. However, I also recognized that I need to grow my hands-on skills and confidence in implementation. I plan to continue improving by intentionally taking on <strong>prototyping-heavy</strong> roles in future projects, forcing myself to practice translating ideas into reality.</p>
+
+    <div class="container">
+        <a href="projects.html" class="back-link">← Back to Projects</a>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
